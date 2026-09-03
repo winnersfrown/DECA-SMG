@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+
+# Your own competition data -- keep it local.
+portfolio.json
+performance_log.json
+target.json
+charts/
+pitch_deck_plan.md
+*.csv
