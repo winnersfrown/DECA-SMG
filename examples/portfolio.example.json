@@ -1,0 +1,86 @@
+{
+  "team": "Team Alpha",
+  "region": "Western Region",
+  "cash": 24895.0,
+  "as_of": "2026-10-20",
+  "holdings": [
+    {
+      "symbol": "NVDA",
+      "asset_class": "stock",
+      "quantity": 129.0,
+      "avg_cost": 167.21,
+      "price": 181.4,
+      "is_short": false,
+      "name": "NVIDIA Corp"
+    },
+    {
+      "symbol": "MSTR",
+      "asset_class": "stock",
+      "quantity": 92.0,
+      "avg_cost": 323.13,
+      "price": 344.0,
+      "is_short": false,
+      "name": "MicroStrategy"
+    },
+    {
+      "symbol": "FSELX",
+      "asset_class": "mutual_fund",
+      "quantity": 60.7,
+      "avg_cost": 173.37,
+      "price": 179.2,
+      "is_short": false,
+      "name": "Fidelity Select Semiconductors"
+    },
+    {
+      "symbol": "T-NOTE-2030",
+      "asset_class": "bond",
+      "quantity": 103.6,
+      "avg_cost": 99.4,
+      "price": 99.7,
+      "is_short": false,
+      "name": "US Treasury Note (satisfies the bond minimum)"
+    }
+  ],
+  "transactions": [
+    {
+      "date": "2026-09-08",
+      "symbol": "NVDA",
+      "side": "buy",
+      "quantity": 129.0,
+      "price": 167.21,
+      "asset_class": "stock",
+      "fee": 5.0,
+      "note": "Core position"
+    },
+    {
+      "date": "2026-09-08",
+      "symbol": "MSTR",
+      "side": "buy",
+      "quantity": 92.0,
+      "price": 323.13,
+      "asset_class": "stock",
+      "fee": 5.0,
+      "note": "High idiosyncratic volatility"
+    },
+    {
+      "date": "2026-09-09",
+      "symbol": "FSELX",
+      "side": "buy",
+      "quantity": 60.7,
+      "price": 173.37,
+      "asset_class": "mutual_fund",
+      "fee": 5.0,
+      "note": "Satisfies the $10,000 mutual fund minimum"
+    },
+    {
+      "date": "2026-09-09",
+      "symbol": "T-NOTE-2030",
+      "side": "buy",
+      "quantity": 103.6,
+      "price": 99.4,
+      "asset_class": "bond",
+      "fee": 5.0,
+      "note": "Satisfies the $10,000 bond minimum -- held at exactly the minimum"
+    }
+  ]
+}

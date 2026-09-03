@@ -1,0 +1,5 @@
+# Full install. The compliance engine works without any of these.
+numpy>=1.24         # tournament simulation, screening, optimization
+matplotlib>=3.7     # pitch-deck charts
+yfinance>=0.2.40    # market data (primary provider)
+requests>=2.28      # market data (stooq fallback)

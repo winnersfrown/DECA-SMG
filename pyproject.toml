@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "decasmg"
+version = "1.0.0"
+description = "Tools for placing top 25 in the DECA Stock Market Game"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["deca", "stock-market-game", "sifma", "portfolio", "tournament"]
+
+# The compliance path -- the part that keeps you from being disqualified --
+# is pure stdlib and has no dependencies at all. Everything below is only
+# needed for simulation, screening and charts.
+dependencies = []
+
+[project.optional-dependencies]
+sim = ["numpy>=1.24"]
+charts = ["matplotlib>=3.7"]
+data = ["yfinance>=0.2.40", "requests>=2.28"]
+all = ["numpy>=1.24", "matplotlib>=3.7", "yfinance>=0.2.40", "requests>=2.28"]
+dev = ["pytest>=7.0", "numpy>=1.24", "matplotlib>=3.7"]
+
+[project.scripts]
+smg = "decasmg.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["decasmg*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
